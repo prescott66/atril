@@ -28,6 +28,7 @@ requires:
     - clang
     - clang-tools
     - cppcheck
+    - dbus-x11
     - git
     - gobject-introspection
     - libcaja-extension-dev
