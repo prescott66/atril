@@ -174,7 +174,7 @@ build_scripts:
   - fi
 
   - if [ ${DISTRO_NAME} == "debian" ];then
-  -     gsettings set org.gnome.desktop.interface toolkit-accessibility true
+  -     xvfb-run gsettings set org.gnome.desktop.interface toolkit-accessibility true
   -     if xvfb-run make check; then :; else cat test/test-suite.log; false; fi
   - fi
 
