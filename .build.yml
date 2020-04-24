@@ -50,6 +50,7 @@ requires:
     - lsb-release
     - make
     - mate-common
+    - python3-dogtail
     - xsltproc
     - yelp-tools
     - zlib1g-dev
