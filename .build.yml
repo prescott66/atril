@@ -174,7 +174,7 @@ build_scripts:
   - fi
 
   - if [ ${DISTRO_NAME} == "debian" ];then
-  -     if make check; then :; else cat test/test-suite.log; false; fi
+  -     if xvfb-run make check; then :; else cat test/test-suite.log; false; fi
   - fi
 
 after_scripts:
